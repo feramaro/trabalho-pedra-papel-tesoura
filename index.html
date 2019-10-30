@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pedra Papel ou Tesoura</title>
+</head>
+<body>
+    <header>
+        <h3 class="mt-3 cor-titulo" style="text-align: center;">Pedra, Papel ou Tesoura</h3>
+    </header>
+    <div class="container">
+        <div class="row justify-content center">
+            <div class="col-md-4 mt-5">
+               <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" name="Pedra" class="form-check-input" id="btPedra"> Pedra
+                    </label>
+               </div>
+               <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" name="Pedra" class="form-check-input" id="btPapel"> Papel
+                </label>
+           </div>
+           <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" name="Pedra" class="form-check-input" id="btTesoura"> Tesoura
+            </label>
+            <div class="mt-5">
+                <button type="button" class="btn btn-info" id="btJogar"> Jogar</button>
+                <button type="button" class="btn btn-danger" id="btJogarNovamente"> Reiniciar Jogo</button>
+                <div class="mt-5 cor-placar"><p><h5 id="placar">Placar: </h5></p></div>
+                <p>
+                    <pre class="cor-vencedor"><h5 id="vencedor">Aguardando inicio<br \>do jogo</h3></pre>
+                </p>
+            </div>
+       </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h3 id="nomeJogador"></h3>
+                <img src="img/pedra_jogador.png" id="imgPlayer">
+            </div>
+            <div class="col-md-4 mt-5">
+                <h3># Computador</h3>
+                <img src="img/pedra_jogador.png" id="imgMaquina">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jogo.js"></script>
+</body>
+</html>
